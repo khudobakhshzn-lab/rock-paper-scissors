@@ -1,0 +1,80 @@
+body {
+  background-color: rgb(25, 25, 25);
+  color: white;
+  font-family: Arial;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.move-icon {
+  height: 50px;
+}
+
+.move-button {
+  background-color: transparent;
+  border: 3px solid white;
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.move-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);  /* subtle hover effect */
+}
+
+.result {
+  font-weight: bold;
+  font-size: 25px;
+  margin-top: 50px;
+}
+
+.score {
+  margin-top: 60px;
+}
+
+/* ✅ Both buttons share the same style */
+.reset-score-button,
+.auto-play-button {
+  background-color: white;
+  border: none;
+  font-size: 15px;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 4px;        /* adds rounded corners */
+}
+
+.reset-score-button:hover,
+.auto-play-button:hover {
+  background-color: #e0e0e0;  /* hover effect */
+}
+
+/* ✅ The message container – text only, no button styles */
+.request-message {
+  margin-top: 15px;          /* space above the message */
+  font-size: 16px;
+  color: #ffcc00;            /* yellow text to stand out on dark bg */
+}
+
+/* ✅ Style for Yes/No buttons INSIDE the message */
+.request-message button {
+  background-color: white;
+  border: none;
+  padding: 5px 15px;
+  margin-left: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.request-message .js-yes-button:hover {
+  background-color: #ffcccc;  /* light red on hover */
+}
+
+.request-message .js-no-button:hover {
+  background-color: #cccccc;  /* light grey on hover */
+}
